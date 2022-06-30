@@ -25,8 +25,8 @@ function print_usage {
   echo
   echo "Example:"
   echo
-  echo "  # Backup oracle YZGL user"
-  echo "  ./${SCRIPT_NAME} --username yzgl --password yzglpassword"
+  echo "  # Backup oracle ts user"
+  echo "  ./${SCRIPT_NAME} --username ts --password tspassword"
 }
 
 function log {
