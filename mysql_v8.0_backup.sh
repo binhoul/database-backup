@@ -10,7 +10,7 @@ readonly SCRIPT_NAME="$(basename "$0")"
 readonly MAX_RETRIES=30
 readonly SLEEP_BETWEEN_RETRIES_SEC=10
 
-readonly DOCKER_IMAGE="nexus.scgsdsj.com/percona/percona-xtrabackup:8.0"
+readonly DOCKER_IMAGE="percona/percona-xtrabackup:8.0"
 
 function print_usage {
   echo
