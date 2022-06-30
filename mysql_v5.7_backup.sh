@@ -181,7 +181,7 @@ function docker_backup_full_manual {
     -w ${env_backup_folder} \
     --volumes-from ${env_volume_from} \
     --entrypoint=/usr/bin/innobackupex \
-    nexus.scgsdsj.com/perconalab/percona-xtrabackup:2.4.23 \
+    perconalab/percona-xtrabackup:2.4.23 \
     --defaults-file="${env_conf}" \
     --no-timestamp \
     --user "${env_username}" \
@@ -219,7 +219,7 @@ function docker_backup_auto {
       -w ${env_backup_folder} \
       --volumes-from ${env_volume_from} \
       --entrypoint=/usr/bin/innobackupex \
-      nexus.scgsdsj.com/perconalab/percona-xtrabackup:2.4.23 \
+      perconalab/percona-xtrabackup:2.4.23 \
       --defaults-file="${env_conf}" \
       --no-timestamp \
       --user "${env_username}" \
@@ -248,7 +248,7 @@ function docker_backup_auto {
         -w ${env_backup_folder} \
         --volumes-from ${env_volume_from} \
         --entrypoint=/usr/bin/innobackupex \
-        nexus.scgsdsj.com/perconalab/percona-xtrabackup:2.4.23 \
+        perconalab/percona-xtrabackup:2.4.23 \
         --defaults-file="${env_conf}" \
         --no-timestamp \
         --user "${env_username}" \
