@@ -1,4 +1,3 @@
-# database-backup
 
 ## oracle备份脚本使用说明
 
