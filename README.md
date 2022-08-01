@@ -22,13 +22,13 @@
 方法一：
 
 1.切换到脚本目录
-2.执行备份命令`./oracle_backup.sh --username yzgl --password yzgl`
+2.执行备份命令`./oracle_backup.sh --username user --password password`
 
 方法二：
 
 在当前目录，创建password.txt，将用户名和密码写入文件，以:分割，例如：
 ```
-echo 'yzgl:yzgl' > password.txt
+echo 'user:password' > password.txt
 ./oracle_backup.sh --keyfile password.txt
 ```
 
@@ -37,9 +37,9 @@ echo 'yzgl:yzgl' > password.txt
 将多个用户的用户名和密码写入password.txt，每个用户一行，用户名密码以:分割，例如：
 ```
 echo > password.txt <<EOF
-yzgl:yzgl
-iot:iot
-es:es
+user1:password1
+user2:password2
+user3:password3
 EOF
 ./oracle_backup.sh --keyfile password.txt
 ```
